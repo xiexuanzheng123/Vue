@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vue Demo!</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- View层 -->
+    <div id="app">
+        {{ message }}
+    </div>
+    <!-- Model层 -->
+    <script>
+        new Vue({
+            el:"#app",
+            data: {
+                message: 'Hello World!'
+            }
+        });
+    </script>
+</body>
+</html>
