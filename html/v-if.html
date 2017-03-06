@@ -7,12 +7,11 @@
     </head>
     <body>
         <div id="app">
-            <div v-if="Math.random() > 0.5">
-                随机数大于0.5
-            </div>
-            <div v-else>
-                随机数小于等于0.5
-            </div>
+            <h1>Hello Vue.js</h1>
+            <h2 v-if="yes">YES</h2>
+            <h2 v-if="no">NO</h2>
+            <h2 v-if="age > 25">Age: {{age}}</h2>
+            <h2 v-if="name.indexOf('jack') >= 0">Name: {{ name }}</h2>
         </div>
         <script type="text/javascript" src="../js/v-if.js"></script>
     </body>
